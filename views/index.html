@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Price Checker</title>
+</head>
+<body>
+  <h1>NASDAQ Stock Price Checker API</h1>
+  <h2>API Test</h2>
+  <div>
+    <h3>Get a Stock Price</h3>
+    <form action="/api/stock-prices" method="get">
+      <label for="get2">Stock name</label>
+      <input type="text" name="stock" id="get2" required>
+      <label for="checkbox0">Like</label>
+      <input type="checkbox" id="checkbox0" name="like" value="true">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div>
+    <h3>Get Two Stock Prices</h3>
+    <form action="/api/stock-prices" method="get">
+      <label for="get3">Stock Name 1</label>
+      <input type="text" id="get3" name="stock">
+      <label for="checkbox1">Like</label>
+      <input type="checkbox" id="checkbox1" name="like" value="true">
+      <label for="get4">Stock Name 2</label>
+      <input type="text" id="get4" name="stock">
+      <label for="checkbox2">Like</label>
+      <input type="checkbox" id="checkbox2" name="like" value="true">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
